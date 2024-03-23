@@ -11,13 +11,15 @@ package gameproject;
 public class Pokemon {
     // Variables
     private final String name;
-    private int health;
-    private String abilities;
+    private int remainingHealth;
+    private final int maxHealth;
+    private Ability[] abilities;
     
     //constructor for variables
-    public Pokemon(String name , int health, String abilities) {
+    public Pokemon(String name , int maxHealth, Ability[] abilities) {
         this.name = name;
-        this.health = health;
+        this.maxHealth = maxHealth;
+        remainingHealth = maxHealth;
         this.abilities = abilities;
     }
 
@@ -25,8 +27,8 @@ public class Pokemon {
         return name;
     }
 
-    public int getHealth() {
-        return health;
+    public int getRemainingHealth() {
+        return remainingHealth;
     }
 
     public String getAbilities() {
