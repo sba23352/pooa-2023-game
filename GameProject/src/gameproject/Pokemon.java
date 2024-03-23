@@ -9,6 +9,11 @@ package gameproject;
  * @author Lecturer
  */
 public class Pokemon {
+    // Variables
+    private final name;
+    private int health;
+    private String abilities;
+    
     public void takeDamage(int damage) {
         
     }
