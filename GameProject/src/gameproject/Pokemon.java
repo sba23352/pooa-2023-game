@@ -10,9 +10,17 @@ package gameproject;
  */
 public class Pokemon {
     // Variables
-    private final name;
+    private final String name;
     private int health;
     private String abilities;
+    
+    //constructor for variables
+    public Pokemon(String name , int health, String abilities) {
+        this.name = name;
+        this.health = health;
+        this.abilities = abilities;
+    }
+    
     
     public void takeDamage(int damage) {
         
