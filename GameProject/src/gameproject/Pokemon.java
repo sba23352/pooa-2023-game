@@ -20,6 +20,22 @@ public class Pokemon {
         this.health = health;
         this.abilities = abilities;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getHealth() {
+        return health;
+    }
+
+    public String getAbilities() {
+        return abilities;
+    }
+    
+    
+    
+    
     
     
     public void takeDamage(int damage) {
